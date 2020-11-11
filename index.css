@@ -8339,8 +8339,29 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-main {
-  overflow: hidden; }
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent; }
+
+.scrollbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 0;
+  opacity: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFCB2B), color-stop(#FFA60F), to(#F5840C));
+  background: -webkit-linear-gradient(bottom, #FFCB2B, #FFA60F, #F5840C);
+  background: -o-linear-gradient(bottom, #FFCB2B, #FFA60F, #F5840C);
+  background: linear-gradient(to top, #FFCB2B, #FFA60F, #F5840C); }
+
+.clickScrollbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background: rgba(170, 170, 170, 0.356); }
 
 @media only screen and (max-width: 570px) {
   p {
